@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фаст фуд</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2dede;
+    }
+    header {
+      background: #d9d9d9;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    header a {
+      text-decoration: none;
+      background: #c8c8c8;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    header a:hover {
+      background: #a0a0a0;
+    }
+    h1 {
+      text-align: center;
+      margin: 20px;
+      font-size: 2.5rem;
+      color: #7b3b3b;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+      background: #c1baba;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      overflow: hidden;
+      text-align: center;
+      padding: 10px;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .card h3 {
+      margin: 10px 0;
+      font-size: 1.2rem;
+    }
+    .card p {
+      font-size: 0.9rem;
+      margin: 10px 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #00e000;
+      color: #000;
+      font-weight: bold;
+      border-radius: 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #00c000;
+    }
+    footer {
+      background: #d9d9d9;
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    footer img {
+      width: 40px;
+      height: 40px;
+    }
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    @media(max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#">Головна</a>
+    <a href="#">Інша сторінка</a>
+    <a href="#">Посилання</a>
+  </header>
+
+  <h1>Фаст фуд</h1>
+
+  <div class="container">
+    <div class="card">
+      <h3>Гамбургер</h3>
+      <img src="https://img.freepik.com/free-photo/front-view-tasty-meat-burger-with-cheese-salad-dark-background_140725-89547.jpg" alt="Гамбургер">
+      <p>Багато калорій але смачно. Йдуть слухи що за бургер Американці готові продати родину</p>
+      <a href="#" class="btn">Купити 🛒</a>
+    </div>
+
+    <div class="card">
+      <h3>Ще один Гамбургер</h3>
+      <img src="https://img.freepik.com/free-photo/front-view-burger-with-greenery-dark-background_140725-89685.jpg" alt="Гамбургер 2">
+      <p>Багато калорій але смачно. Це якась копія великого бургера</p>
+      <a href="#" class="btn">Купити 🛒</a>
+    </div>
+
+    <div class="card">
+      <h3>Піца</h3>
+      <img src="https://img.freepik.com/free-photo/top-view-delicious-pizza-with-greenery-dark-background_140725-89539.jpg" alt="Піца">
+      <p>Багато калорій але смачно. Підійде для всієї сім'ї!</p>
+      <a href="#" class="btn">Купити 🛒</a>
+    </div>
+
+    <div class="card">
+      <h3>Чіпси</h3>
+      <img src="https://img.freepik.com/free-photo/crispy-potato-chips-bowl-snack-unhealthy_1150-15459.jpg" alt="Чіпси">
+      <p>Багато калорій але смачно. А ще так самісінькі щоб в телик глядіти та їсти</p>
+      <a href="#" class="btn">Купити 🛒</a>
+    </div>
+  </div>
+
+  <footer>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+    <p>контакти: cobrapro80@gmail.com</p>
+  </footer>
+</body>
+</html>
